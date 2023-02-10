@@ -1,0 +1,8 @@
+﻿{
+  "regex": "(?=.[0-9])(?=.[a-z])(?=.*[a-zA-Z])[\\x20-\\x7E]{8,25}",
+  "system_name": "abc.png",
+  "message_first_login": "※半角数字・英字、記号を含む8桁以上。",
+  "message_validate_password": "パスワードは半角8～25文字以内で英字・数字・記号をそれぞれ1文字以上含んでください",
+  "ENABLE_CONSOLE_LOG": "ON",
+  "ENABLE_BASE64": "ON"
+}
