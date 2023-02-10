@@ -1,0 +1,43 @@
+{
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [],
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended"],
+  "rules": {
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "eqeqeq": ["error", "smart"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "semi": ["error", "always"],
+    "linebreak-style": ["off"],
+    "no-undef": ["error"],
+    "no-useless-catch": ["off"],
+    "max-len": ["error", { "code": 160, "ignoreTemplateLiterals": true, "ignoreStrings": true, "ignorePattern": "d=\"([\\s\\S]*?)\"" }],
+    "vue/html-self-closing": ["off"],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 20,
+        "multiline": {
+          "max": 1,
+          "allowFirstLine": false
+        }
+      }
+    ],
+    "vue/singleline-html-element-content-newline": ["off"],
+    "vue/component-definition-name-casing": ["off"],
+    "vue/html-closing-bracket-newline": ["off"],
+    "vue/html-indent": ["off"],
+    "no-irregular-whitespace": ["off"],
+    "vue/prop-name-casing": ["off"],
+    "vue/require-default-prop": ["off"]
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "commonjs": true
+  }
+}

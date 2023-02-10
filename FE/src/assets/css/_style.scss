@@ -1,0 +1,62 @@
+// Theme layout variables
+@import '_variables';
+@import '_animations';
+// Plugins
+@import '~element-plus/theme-chalk/index.css';
+// Layout
+@import '@/assets/css/layouts/aside', '@/assets/css/layouts/header', '@/assets/css/layouts/header-mobile', '@/assets/css/layouts/footer';
+// Customize Plugins
+@import '@/assets/css/plugins/custom';
+@import '@/assets/css/plugins/custom_svg';
+@import '@/assets/css/pages/_D01.scss';
+
+@import '_pdfLayerText';
+
+// reset font
+* {
+  font-family: 'Noto Sans Japanese';
+  button {
+    font-family: 'Noto Sans Japanese';
+  }
+}
+
+.z01-s02-ex {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  .noData-content {
+    .noData-thumb {
+      height: 100%;
+      position: absolute;
+      top: 30px;
+      margin-top: 0px !important;
+      width: 100%;
+      svg {
+        height: 120px;
+      }
+    }
+  }
+}
+
+$err: #dc3545;
+.tox .tox-edit-area {
+  border-radius: 4px;
+}
+.hasErr {
+  input,
+  textarea,
+  .timepicker {
+    border-color: $err !important;
+  }
+  .tox .tox-edit-area,
+  .userMain-box {
+    border: 1px solid $err;
+  }
+  .userMain-box {
+    border-radius: 10px;
+  }
+}
+
+.display-none {
+  display: none;
+}

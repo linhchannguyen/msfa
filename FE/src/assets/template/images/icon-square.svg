@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>template</title>
+	<defs>
+		<image  width="70" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAkCAMAAAADzLznAAAAAXNSR0IB2cksfwAAAWhQTFRFAAAAQEBAQEBAQEBA////////////////////////////////////////////////////QEBAQEBAQEBAQEBAQEBA////////////////////////////////////////////////////////////////6urqQEBAQEBA////////////////////////////////////////////////////////////////////8fHxQEBA////////////////////////////////////////////////////////////////////////////////////////////////+Pj4QEBA////////////////////////////////////////////////////////7+/v////////////////////////////////////5+fnQEBA////pqamQEBA////QEBAQEBAQEBAQEBA9FTCSAAAAHh0Uk5TACFb/wgJAAoqNDYbQVhUbBMeSU1LGg+DI15WWwEGXC0kMSc9HQUyAQWELhJRPBwyPxpDDHoZZSFtHlEGGItIbwMCiixrSVl8Fp+dVw06KBVMPgdFVQMLZ3FVcKtLY5czYY2qskI4OU01RBcEUqAtBKQLAlAICQAH+eNQMwAAAVpJREFUeJxjYCABMDLhAIykmMLAxIwDMI0aM2rMqDGjxowaQwVjWFjZKDKGnYOTC6iCm4eXj1+AgDGCQliAsIiQkCiDGJu4BFiNpJS0jKwcQo+8giLEgRxKIFJZhUFVDZvZ6hoQWlNLG0SJy+no6ukbsDIwGOoaMTAYm5iamYPl5ThBrrVQsTSywupGaxChamNrZ6/K4ODopOms6eLq6sbA4O7hycag5+Xt7WPE4+vna+IPVBYQGBTMGYLVmFAQoSKlI+kiyxCmGx7B4OIdaQA0hk83ytiDPTrcLyYiNi4+IdGRgU0iyZwl2T4Ft2twAGP51LA0BV2V9IzUzCyGbH1fHr+c3DysjsnHYww2UFCojs0xRaSZkl3MUILNGBIdAwQamM7JDyXdGIZSdAF1MhyDqUvduowcYxjUy5H9FUqmKQwMZdblMK3qJaTGNYqDrDU0rEOtNaw1EGIAXHs3xP6jGfgAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Is This a Real Life? copy" href="#img1" x="-42" y="3" />
+</svg>

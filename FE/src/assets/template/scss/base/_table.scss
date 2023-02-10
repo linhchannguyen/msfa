@@ -1,0 +1,129 @@
+table {
+  width: 100%;
+  tr {
+    th,
+    td {
+      padding: 5px 12px;
+    }
+    td {
+      border: 1px solid #d5d5d5;
+      &:first-of-type {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+    th {
+      font-size: 16px;
+    }
+  }
+}
+.tableBox {
+  thead {
+    tr {
+      background: -moz-linear-gradient(top, #5c6f83 0%, #4d6277 20%, #41586e 30%, #465d72 100%);
+      background: -webkit-linear-gradient(top, #5c6f83 0%, #4d6277 20%, #41586e 30%, #465d72 100%);
+      background: linear-gradient(to bottom, #5c6f83 0%, #4d6277 20%, #41586e 30%, #465d72 100%);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      th {
+        color: #fff;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-bottom: none;
+        vertical-align: middle;
+        font-size: 0.875rem;
+        white-space: nowrap;
+        position: relative;
+        &:not(:last-child):after {
+          content: '';
+          width: 1px;
+          background-color: #fff;
+          height: calc(100% - 8px);
+          position: absolute;
+          top: 4px;
+          right: -1px;
+        }
+        &:first-of-type {
+          border-radius: 10px 0 0 0;
+          -moz-border-radius: 10px 0 0 0;
+          -webkit-border-radius: 10px 0 0 0;
+        }
+        &:last-child {
+          border-radius: 0 10px 0 0;
+          -moz-border-radius: 0 10px 0 0;
+          -webkit-border-radius: 0 10px 0 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+  tr {
+    td {
+      border: 1px solid #e3e3e3;
+    }
+  }
+}
+.table-hg100 {
+  max-height: 100%;
+  min-height: 100px;
+  overflow: auto;
+  box-shadow: 0 0 8px #e3e3e3;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+/*** custom DateTimePicker */
+.el-picker-panel__content {
+  tr {
+    td {
+      border: none;
+    }
+  }
+}
+
+/*** custom table row hover */
+.not-hover {
+  box-shadow: none !important;
+}
+
+.tableCustom {
+  tbody {
+    tr {
+      position: relative;
+      background-color: transparent;
+      cursor: default;
+      width: 100%;
+      height: 100%;
+      transition: box-shadow 0.55s, background 0.55s, transform 0.55s ease;
+      &:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: unset;
+        top: 0;
+        left: 0;
+        transition: all 0.12s ease-in-out;
+        z-index: -1;
+      }
+      &:hover {
+        box-shadow: inset 0 0 0 2px #c3c0c0;
+        td {
+          &:first-of-type {
+            border-left: none;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+      &.deleted {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+      }
+    }
+  }
+}

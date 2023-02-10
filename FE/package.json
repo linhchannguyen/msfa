@@ -1,0 +1,85 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "eslint": "eslint 'src/**/*.{js,vue}'",
+    "eslint:fix": "eslint 'src/**/*.{js,vue}' --fix"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^5.10.0",
+    "@fullcalendar/daygrid": "^5.9.0",
+    "@fullcalendar/interaction": "^5.9.0",
+    "@fullcalendar/timegrid": "^5.9.0",
+    "@fullcalendar/vue3": "^5.10.0",
+    "@popperjs/core": "^2.10.2",
+    "@tinymce/tinymce-vue": "^4.0.5",
+    "animate.css": "^4.1.1",
+    "apexcharts": "^3.33.2",
+    "axios": "^0.22.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-select": "^1.13.14",
+    "bootstrap-tagsinput": "^0.7.1",
+    "canvas": "^2.9.0",
+    "core-js": "^3.6.5",
+    "dom-to-image": "^2.6.0",
+    "element-plus": "^1.1.0-beta.19",
+    "file-saver": "^2.0.5",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.0",
+    "moment": "^2.29.1",
+    "pdfjs-dist": "^2.12.313",
+    "perfect-scrollbar": "^1.4.0",
+    "popper.js": "^1.16.1",
+    "prettier": "^2.4.1",
+    "sass": "^1.54.0",
+    "sass-loader": "^10.0.4",
+    "slick-carousel": "^1.8.1",
+    "v-calendar": "^3.0.0-alpha.6",
+    "vue": "^3.2.33",
+    "vue-color-kit": "^1.0.5",
+    "vue-currency-input": "^2.4.0",
+    "vue-dndrop": "^1.1.11",
+    "vue-router": "^4.0.11",
+    "vue-svg-inline-plugin": "^2.2.0",
+    "vue3-apexcharts": "^1.4.1",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.19.0",
+    "vue-loader": "^15.9.7",
+    "vue-svg-inline-loader": "^2.1.2",
+    "vue-template-compiler": "^2.6.14",
+    "vuex-undo-redo": "^1.1.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint-fix": "npm run lint -- --fix",
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

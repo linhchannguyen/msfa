@@ -1,0 +1,600 @@
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #727f88;
+  @include appearance(none);
+  padding: 0 15px;
+  height: 40px;
+  color: #2d3033;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: 'Noto Sans Japanese' !important;
+
+  &:focus {
+    border: 1px solid #409eff;
+    box-shadow: none;
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #b7c3cb;
+}
+
+.form-control::-moz-placeholder {
+  color: #b7c3cb;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #b7c3cb;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #b7c3cb;
+}
+
+.form-control::placeholder {
+  color: #b7c3cb;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  &.form-control {
+    resize: none;
+    min-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.form-icon {
+  position: relative;
+
+  .form-control-input {
+    .el-input__inner {
+      padding-right: 35px;
+    }
+  }
+
+  &.form-icon--noBod {
+    &.icon-left {
+      .icon {
+        border-right: none;
+      }
+    }
+
+    &.icon-right {
+      .icon {
+        border-right: none;
+      }
+    }
+  }
+
+  &.icon-left {
+    .icon {
+      left: 10px;
+      border-right: 1px solid #727f88;
+      padding-right: 5px;
+    }
+
+    .form-control {
+      padding-left: 35px;
+    }
+  }
+
+  &.icon-right {
+    .icon {
+      right: 10px;
+      border-left: 1px solid #727f88;
+      padding-left: 5px;
+    }
+
+    .form-control {
+      padding-right: 35px;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    height: calc(100% - 14px);
+    display: flex;
+    align-items: center;
+    top: 7px;
+    z-index: 2;
+
+    &.icon--cursor {
+      cursor: pointer;
+    }
+  }
+
+  .bootstrap-tagsinput {
+    padding-right: 38px;
+  }
+}
+
+.select-control {
+  &:not([class*='col-']):not([class*='form-control']):not(.input-group-btn) {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    font-size: 14px;
+
+    ul {
+      li {
+        a {
+          padding: 6px;
+          white-space: normal;
+        }
+      }
+    }
+  }
+
+  &.show {
+    .dropdown-toggle {
+      background: #fff;
+    }
+  }
+
+  .dropdown-toggle {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 14px;
+    color: #5f6b73;
+    font-weight: normal;
+
+    &.bs-placeholder {
+      color: #b7c3cb;
+    }
+
+    .filter-option {
+      border-right: 1px solid #727f88;
+      width: calc(100% - 5px);
+    }
+
+    .filter-option-inner {
+      padding-top: 3px;
+      padding-right: 4px;
+    }
+
+    .filter-option-inner-inner {
+      text-overflow: ellipsis;
+    }
+
+    &:active {
+      background: #fff;
+    }
+
+    &:focus {
+      outline: none !important;
+    }
+
+    &::after {
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #59a5ff;
+      border-bottom: none;
+      margin-left: 7px;
+    }
+  }
+
+  .dropdown-item {
+    color: #99a5ae;
+
+    &:active,
+    &.active {
+      background: #eef6ff;
+      color: #2d3033;
+    }
+  }
+}
+
+.badge-info {
+  background: #b7d4ff;
+  border-radius: 24px;
+  color: #225999;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.el-input__inner,
+.el-textarea__inner {
+  border: 1px solid #727f88;
+  color: #5f6b73;
+}
+
+.el-textarea__inner {
+  resize: none;
+}
+
+.form-control-select,
+.form-control-select-c {
+  display: inherit !important;
+  position: relative;
+
+  .el-input__inner {
+    background: #fff;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 14px;
+    color: #5f6b73;
+    font-weight: normal;
+  }
+
+  .el-input__suffix {
+    border-left: 1px solid #727f88;
+    height: calc(100% - 12px);
+    width: 25px;
+    top: 6px;
+
+    .el-input__suffix-inner {
+      width: 25px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -6px;
+      bottom: 0;
+      height: 100%;
+    }
+
+    i {
+      color: #59a5ff !important;
+
+      &::after {
+        content: '';
+        height: 100%;
+        width: 0;
+        width: 10px;
+        height: 5px;
+        position: absolute;
+        background: #59a5ff;
+        top: 1.1px;
+        bottom: 0;
+        right: 0px;
+        left: 0;
+        margin: auto;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+    }
+  }
+}
+
+.el-select__popper {
+  .el-select-dropdown__item {
+    color: #99a5ae;
+    font-weight: normal !important;
+    font-size: 14px;
+    white-space: normal;
+    height: inherit;
+    line-height: normal;
+    padding: 6px;
+
+    &.selected {
+      font-weight: 500 !important;
+      background: #eef6ff;
+      color: #2d3033;
+    }
+
+    &:hover {
+      background-color: #eef6ff;
+      color: #2d3033 !important;
+      font-weight: 500 !important;
+    }
+  }
+}
+
+.form-control-datePicker {
+  .el-input__inner {
+    padding: 0 35px 0 15px;
+  }
+
+  .el-input__prefix {
+    display: none;
+  }
+}
+
+.form-control-datePickerLeft {
+  .el-input__prefix {
+    display: none;
+  }
+}
+
+.el-input__inner {
+  font-family: 'Noto Sans Japanese';
+}
+
+.form-control-textarea {
+  .el-textarea__inner {
+    min-height: 64px !important;
+  }
+
+  &.form-hg40 {
+    .el-textarea__inner {
+      min-height: 40px !important;
+    }
+  }
+
+  &.custom-document-creation {
+    .el-textarea__inner {
+      min-height: 340px !important;
+
+      @media (max-width: 1366px) {
+        min-height: 220px !important;
+      }
+    }
+  }
+}
+
+.form-control-input-outline {
+  line-height: normal;
+
+  &.formFs-16 {
+    font-size: 1rem;
+  }
+
+  &.formText-right {
+    .el-input__inner {
+      text-align: right;
+    }
+  }
+
+  .el-input__inner {
+    height: 32px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #727f88;
+    padding: 0 6px;
+
+    &:hover {
+      border-bottom: 1px solid #c0c4cc;
+    }
+
+    &:focus {
+      border-bottom: 1px solid #409eff;
+    }
+  }
+}
+
+.form-control-time {
+  border: 1px solid #727f88 !important;
+
+  &.is-active {
+    border: 1px solid #409eff !important;
+  }
+
+  .el-range-input {
+    border: none !important;
+    text-align: center;
+    font-family: 'Noto Sans Japanese' !important;
+
+    &:first-of-type {
+      padding-left: 22px;
+    }
+  }
+
+  .el-icon-time {
+    display: none;
+  }
+
+  .el-range-separator {
+    min-width: 16px;
+    background: none;
+    padding: 2px 0 0;
+    color: #727f88;
+    font-size: 1rem;
+  }
+}
+
+/** Date **/
+.range-group {
+  display: flex;
+  margin-right: 5px;
+
+  width: 100% !important;
+
+  .range-input-1 {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    font: 12px arial;
+
+    .form-control-input .el-input__inner {
+      height: 35px;
+      margin-right: 5px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: #ffffff;
+      border-bottom: var(--el-input-border, var(--el-border-base));
+      border-radius: 0 !important;
+      cursor: default;
+      text-align: center;
+    }
+
+    span {
+      position: absolute;
+      top: 10px;
+      color: #d3d3d3;
+      padding-left: 5px;
+      font: inherit;
+      right: 10px;
+      cursor: default;
+
+      &:hover {
+        color: rgb(160, 159, 159);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .range-input-2 {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    font: 12px arial;
+
+    .form-control-input .el-input__inner {
+      height: 35px;
+      margin-left: 5px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: #ffffff;
+      border-radius: 0 !important;
+      border-bottom: var(--el-input-border, var(--el-border-base));
+      cursor: default;
+      text-align: center;
+    }
+
+    span {
+      position: absolute;
+      top: 10px;
+      color: #d3d3d3;
+      padding-left: 5px;
+      font: inherit;
+      right: 10px;
+      cursor: default;
+
+      &:hover {
+        color: rgb(160, 159, 159);
+        font-weight: bold;
+      }
+    }
+
+    .form-control-input .validate_end_date {
+      color: red;
+    }
+  }
+}
+
+.vc-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px 0 18px;
+  display: none !important;
+
+  &.align-left {
+    justify-content: flex-start;
+  }
+
+  &.align-right {
+    justify-content: flex-end;
+  }
+}
+
+.vc-arrows-container {
+  top: 50% !important;
+  display: -ms-flexbox;
+  padding: 0px !important;
+}
+
+.vc-arrow {
+  border-width: 0px !important;
+
+  &:hover {
+    background: 'red' !important;
+  }
+
+  &:focus {
+    border-color: 'red' !important;
+  }
+
+  &.is-disabled {
+    opacity: 0.25;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+.vc-weeks {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.vc-border-top {
+  top: 10% !important;
+  border-bottom: 1px solid var(--gray-500);
+  margin-top: 10px;
+}
+
+.customCurrency-suffix {
+  .el-input__inner {
+    padding-right: 25px;
+  }
+
+  .el-input__suffix {
+    top: 3px;
+  }
+}
+
+.color-number--red,
+.accordion-number--red {
+  .el-input__inner,
+  .el-input__suffix {
+    color: #ea5d54;
+  }
+}
+
+.vc-day {
+  padding-top: 10px !important;
+}
+
+.vc-day-layer {
+  padding-top: 10px !important;
+}
+
+// input number
+.no-spin {
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.disabledArea {
+  .el-textarea__inner {
+    color: #c0c4cc;
+    cursor: not-allowed;
+    background-color: #f5f7fa;
+    border-color: #e4e7ed;
+  }
+}
+
+.input-currency {
+  .el-input__inner {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #727f88;
+    text-align: right;
+    z-index: 2;
+  }
+
+  .el-input__suffix {
+    z-index: 1;
+  }
+}
+
+input:disabled {
+  color: #797b7c !important;
+}
+
+.el-textarea.is-disabled .el-textarea__inner,
+.el-select .el-input.is-disabled .el-input__inner {
+  cursor: default;
+}
+
+.knowForm-col .el-textarea.is-disabled .el-textarea__inner {
+  color: #5f6b73;
+}

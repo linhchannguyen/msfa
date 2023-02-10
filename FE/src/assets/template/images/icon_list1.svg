@@ -1,0 +1,25 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 19" width="30" height="19">
+	<title>template</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #4f4d4d } 
+		.t1 { font-size: 108px;fill: #4f4d4d;font-weight: 400;font-family: "Rowdies-Regular", "Rowdies" } 
+	</style>
+	<path id="Hình dạng 1" class="s0" d="m7.18 8.16h20.84v2.79h-20.84v-2.79z" />
+	<path id="Hình dạng 1 copy" class="s0" d="m7.12 2.79h20.84v2.79h-20.84v-2.79z" />
+	<path id="Hình dạng 1 copy 2" class="s0" d="m7.18 13.69h20.84v2.79h-20.84v-2.79z" />
+	<text id="1" style="transform: matrix(.054,0,0,.054,3.321,6.28)" >
+		<tspan x="-21.8" y="0" class="t1">1
+</tspan>
+	</text>
+	<text id="" style="transform: matrix(1,0,0,1,-43,261)" >
+	</text>
+	<text id="3" style="transform: matrix(.054,0,0,.054,.589,13.15)" >
+		<tspan x="22.5" y="76.5" class="t1">3</tspan><tspan  y="76.5" class="t1">
+</tspan>
+	</text>
+	<text id="2" style="transform: matrix(.054,0,0,.054,.857,7.621)" >
+		<tspan x="14.6" y="76.5" class="t1">2</tspan><tspan  y="76.5" class="t1">
+</tspan>
+	</text>
+</svg>

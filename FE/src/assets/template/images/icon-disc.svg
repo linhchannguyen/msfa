@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>template</title>
+	<defs>
+		<image  width="68" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAMAAAAHOWzaAAAAAXNSR0IB2cksfwAAAhNQTFRFAAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBA////////////QEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBA////////////////////////////////////////////////////////////////////////////////////////////////////////6urq////////////////////////////////////////////////////////////////////8fHx////////////////////////////////////////////////////////////////////////////////////////////////+Pj4////////////////////////////////////////////////////////7+/v////////////////////////////////////5+fn////pqam////QEBAIi4tTQAAALF0Uk5TAA0gMS8fDApfs+f6//nmrVcHOcL+/LkAZPdTaloBLvDoxfuXfNjG8uDp17BlTRP064t7yRACBCXiGwgXGAVs/dFiAwgJADV6stCvdzAGCio0NhtBWFRsEw+DI15WWwEGXC0kMSc9HQUyhC4SUTwcMj8aQwx6GWUhbR5RGItIbwMCiixrSVl8Fp+dVw06KBVMPgdFVQtncVVwq0tjlzNhjaqyQjg5TTVEFwRSoC2kC1AJeiXGUwAAAhVJREFUeJxjYCALMDIxs7CykacXAtg5OLm4eXh4+fgFBMk1Q0hYhAcKRMVYyDJCXIKbBwlISpFjiLQoDwrglpEl2Qw5eR40oECyj8QV0c3g4eEk1RAWEUxDlFhJNEQZ0wweHhUSDVHFZogaiYaoYzNEg0RDlLAZokmiIZrYDNEi0RAsMczDo02iITrYDNEl0RA9fUwzDNhJNITBENMQI1LNYGA0RjdDzIRUM0zNzC3QosaSVDPErRgYrIWRzeC0IdUMBnBpaGunBc2G9g6OTqZmCGlnF1fCZshCi1RBN3cPB08vbx9bIMcXiP38AwKBVFBwSGhYOAFDfLEKOjEwRLhGRoE50TGxcfEJCMnEpGSI4/xTQGRqGkN6BlbngZzDkJmVDaIiE3Jy8/ILXBgYCnOLGBiKS0rLysGqEgJALq1IqyyqwuW+9Oqa2rp0hvqGxsymzOaWllYGhrb2DleGvM6uru6i4J7enpI+oMr+CRMnBUzGagjQO2kxOdHN8QxTcqdOY2juml4ANCQ0d0Zxu9/Mqb2zps2eM3fe/AYG16gF5c4L6xYRH1JgUJy4eMqSpNy0pcsWL1/BsDK/J7h31eo1WB1ihk0UJ1i7DlsV42tKihkr1zNYYTOEJIcAgS2mU8ycSDWEYQO6gCzJDsHUI+srTrohwOyD7CMnsswAlga+gjCNslakxS6KY3xtbX2dfG19bWEiACVQcuzC0NyAAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Is This a Real Life?" href="#img1" x="-42" y="3" />
+</svg>

@@ -1,0 +1,132 @@
+@import '../../../assets/css/_animations.scss';
+// table
+.custom-tr {
+  &:first-child {
+    border-left: 2px solid #c3c0c0;
+    border-right: 2px solid #c3c0c0;
+  }
+  border-left: 2px solid #c3c0c0;
+  border-right: 2px solid #c3c0c0;
+}
+.tableCustom {
+  tbody {
+    tr {
+      transition: box-shadow 0.75s, background 0.75s, transform 0.75s ease;
+
+      &:hover {
+        border-left: 2px solid #c3c0c0;
+        border-right: 2px solid #c3c0c0;
+        td {
+          @include table-row-hilight;
+
+          &:first-of-type {
+            border-left: none;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+      &.deleted {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+      }
+    }
+  }
+}
+
+.tableCustom1 tr {
+  transition: background 0.75s, transform 0.75s ease;
+  &:hover {
+    td {
+      background: #f5f7fa;
+      &:first-of-type {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  &.deleted {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+  }
+}
+
+// dropdown
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 0;
+  opacity: 0;
+  background: #f2f2f2;
+  visibility: hidden;
+  border: 1px solid #e3e3e3;
+  transition: opacity 0.75s, visibility 0.75s, height 0.75s;
+}
+.show .content {
+  visibility: visible;
+  opacity: 1;
+  height: 100px;
+}
+
+// ul > li
+.dropdown-notif {
+  top: 0 !important;
+  right: 0;
+  .list-notif {
+    li {
+      transition: background 0.75s, transform 0.75s ease;
+      @keyframes animation-updated-color {
+        to {
+          background-position: right;
+        }
+      }
+      &.deleted {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+      }
+      &.updatedColorItem {
+        background: linear-gradient(to left, #fff 50%, transparent 50%) left;
+        background-size: 200%;
+        animation: animation-updated-color 1s;
+      }
+      &.background-e3e3e3.updatedColorItem {
+        background: linear-gradient(to left, #e3e3e3 50%, transparent 50%) left;
+        background-size: 200%;
+        animation: animation-updated-color 1s;
+      }
+    }
+  }
+}
+
+// CSS Hover 2px
+.table_hover {
+  tbody {
+    tr {
+      position: relative;
+      background-color: transparent;
+      cursor: pointer;
+      &:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: unset;
+        top: 0;
+        left: 0;
+        border: 1px solid transparent;
+        transition: all 0.12s ease-in-out;
+        z-index: -1;
+      }
+      &:hover {
+        &:after {
+          box-shadow: inset 0 0 0 2px #c3c0c0;
+        }
+      }
+    }
+  }
+}
