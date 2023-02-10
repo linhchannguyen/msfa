@@ -1,0 +1,31 @@
+DROP TABLE IF EXISTS `z_access`;
+
+CREATE TABLE `z_access` (
+  `access_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'アクセスID',
+  `process_id` char(10) NOT NULL COMMENT 'プロセスID',
+  `log_level` varchar(10) DEFAULT NULL COMMENT 'ログレベル',
+  `business_type` char(3) NOT NULL COMMENT '業務種別:業務種別(業務処理ID)',
+  `web_access_datetime` datetime(0) NOT NULL COMMENT 'アクセス日時（WEB）',
+  `method` varchar(5) NOT NULL COMMENT 'メソッド',
+  `db_access_datetime` datetime(0) DEFAULT NULL COMMENT 'アクセス日時（DB）',
+  `user_cd` varchar(15) DEFAULT NULL COMMENT 'ユーザコード',
+  `user_cd_proxy` varchar(15) DEFAULT NULL COMMENT 'ユーザコード（代行ログイン者）',
+  `remote_address` varchar(40) NOT NULL COMMENT 'リモートアドレス',
+  `api_url` text NOT NULL COMMENT 'API呼び出し元',
+  `type_access` varchar(30) NOT NULL COMMENT 'タイプアクセス',
+  `http_referer` text COMMENT 'リファラー',
+  `user_agent` text COMMENT 'ユーザエージェント',
+  `parameter` text DEFAULT NULL COMMENT 'パラメータ:GETとPOSTの中身',
+  `status_code` varchar(3) NOT NULL COMMENT 'ステータスコード',
+  `token` longtext DEFAULT NULL COMMENT 'トークン',
+  `token_proxy` longtext DEFAULT NULL COMMENT '代行者のトークン',
+  `link_url_fe` text DEFAULT NULL COMMENT 'アクセスURL',
+  `info_button_fe` varchar(255) DEFAULT NULL COMMENT 'ボタンのタイトル',
+  `created_by` varchar(15) NOT NULL COMMENT '登録者コード',
+  `proxy_created_by` varchar(15) DEFAULT NULL COMMENT '登録者コード（代行ログイン者）',
+  `created_at` datetime NOT NULL COMMENT '登録日時',
+  `updated_by` varchar(15) NOT NULL COMMENT '更新者コード',
+  `proxy_updated_by` varchar(15) DEFAULT NULL COMMENT '更新者コード（代行ログイン者コード）',
+  `updated_at` datetime NOT NULL COMMENT '更新日時',
+  PRIMARY KEY (`access_id`)
+) COMMENT = 'アクセスログ' ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
